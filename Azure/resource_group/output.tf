@@ -3,12 +3,12 @@
 #
 
 
-output "resourceGroup-Name" {
+output "name" {
   value = azurerm_resource_group.rg.name
 }
 
 
-output "resourceGroup-Location" {
+output "location" {
   value = azurerm_resource_group.rg.location
 }
 

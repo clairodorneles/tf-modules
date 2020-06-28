@@ -11,4 +11,6 @@ variable "location" {
   description = "The location that the resource will run in."
 }
 
-
+variable "tags" {
+  description = "The keys to identity Storage Account"
+}
