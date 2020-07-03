@@ -15,6 +15,11 @@ variable "aMeth" {
   default = "Dynamic"
 }
 
+variable "sku" {
+  description = "Basic and Standard"
+  default = "Basic"
+}
+
 variable "fqdn" {
   description = "The Fully Qualified Domain Name"
 }

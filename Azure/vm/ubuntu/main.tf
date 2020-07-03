@@ -3,6 +3,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   resource_group_name = var.rgName
   location            = var.location
   size                = var.vmSize
+  computer_name       = var.vmName
   admin_username      = var.vmAdminUser
   network_interface_ids = [
     var.vmNicId,
@@ -15,7 +16,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
   os_disk {
     caching              = "ReadWrite"
-    storage_account_type = "Standard_LRS"
+    storage_account_type = "Premium_LRS"
   }
 
   source_image_reference {
